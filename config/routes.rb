@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get "/all_products", controller: "products", action: "display_all"
   get "/canvas", controller: "products", action: "display_canvas"
   get "/paints", controller: "products", action: "display_paints"
+  get "/products", controller: "products", action: "params_products"
+  get "/products/:product", controller: "products", action: "params_products"
 end
